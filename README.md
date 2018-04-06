@@ -6,9 +6,9 @@
 
 
 ## Data Analysis
-- Customer Quality
-- Loan Provider Profitability
-- Credit Risk
+1. Customer Quality
+2. Loan Provider Profitability
+3. Credit Risk
 
 #### Customer Quality
 
