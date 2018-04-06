@@ -1,0 +1,1647 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0216.1925                               -->
+<workbook source-build='10.2.0 (10200.17.0216.1925)' source-platform='mac' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='prosperLoanData' inline='true' name='federated.156xcbr0wgc9lq1a1j15f1cxuruv' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='prosperLoanData' name='textscan.1q5b03d1val7gq1g5v2tj03glt7l'>
+            <connection class='textscan' directory='/Users/Miyal/Desktop/Udacity/Data Visualization/Project' filename='prosperLoanData.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1q5b03d1val7gq1g5v2tj03glt7l' name='prosperLoanData.csv' table='[prosperLoanData#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='ListingKey' ordinal='0' />
+            <column datatype='integer' name='ListingNumber' ordinal='1' />
+            <column datatype='datetime' name='ListingCreationDate' ordinal='2' />
+            <column datatype='string' name='CreditGrade' ordinal='3' />
+            <column datatype='integer' name='Term' ordinal='4' />
+            <column datatype='string' name='LoanStatus' ordinal='5' />
+            <column datatype='datetime' name='ClosedDate' ordinal='6' />
+            <column datatype='real' name='BorrowerAPR' ordinal='7' />
+            <column datatype='real' name='BorrowerRate' ordinal='8' />
+            <column datatype='real' name='LenderYield' ordinal='9' />
+            <column datatype='real' name='EstimatedEffectiveYield' ordinal='10' />
+            <column datatype='real' name='EstimatedLoss' ordinal='11' />
+            <column datatype='real' name='EstimatedReturn' ordinal='12' />
+            <column datatype='integer' name='ProsperRating (numeric)' ordinal='13' />
+            <column datatype='string' name='ProsperRating (Alpha)' ordinal='14' />
+            <column datatype='real' name='ProsperScore' ordinal='15' />
+            <column datatype='integer' name='ListingCategory (numeric)' ordinal='16' />
+            <column datatype='string' name='BorrowerState' ordinal='17' />
+            <column datatype='string' name='Occupation' ordinal='18' />
+            <column datatype='string' name='EmploymentStatus' ordinal='19' />
+            <column datatype='integer' name='EmploymentStatusDuration' ordinal='20' />
+            <column datatype='boolean' name='IsBorrowerHomeowner' ordinal='21' />
+            <column datatype='boolean' name='CurrentlyInGroup' ordinal='22' />
+            <column datatype='string' name='GroupKey' ordinal='23' />
+            <column datatype='datetime' name='DateCreditPulled' ordinal='24' />
+            <column datatype='integer' name='CreditScoreRangeLower' ordinal='25' />
+            <column datatype='integer' name='CreditScoreRangeUpper' ordinal='26' />
+            <column datatype='datetime' name='FirstRecordedCreditLine' ordinal='27' />
+            <column datatype='integer' name='CurrentCreditLines' ordinal='28' />
+            <column datatype='integer' name='OpenCreditLines' ordinal='29' />
+            <column datatype='integer' name='TotalCreditLinespast7years' ordinal='30' />
+            <column datatype='integer' name='OpenRevolvingAccounts' ordinal='31' />
+            <column datatype='real' name='OpenRevolvingMonthlyPayment' ordinal='32' />
+            <column datatype='integer' name='InquiriesLast6Months' ordinal='33' />
+            <column datatype='real' name='TotalInquiries' ordinal='34' />
+            <column datatype='integer' name='CurrentDelinquencies' ordinal='35' />
+            <column datatype='real' name='AmountDelinquent' ordinal='36' />
+            <column datatype='integer' name='DelinquenciesLast7Years' ordinal='37' />
+            <column datatype='integer' name='PublicRecordsLast10Years' ordinal='38' />
+            <column datatype='integer' name='PublicRecordsLast12Months' ordinal='39' />
+            <column datatype='real' name='RevolvingCreditBalance' ordinal='40' />
+            <column datatype='real' name='BankcardUtilization' ordinal='41' />
+            <column datatype='real' name='AvailableBankcardCredit' ordinal='42' />
+            <column datatype='real' name='TotalTrades' ordinal='43' />
+            <column datatype='real' name='TradesNeverDelinquent (percentage)' ordinal='44' />
+            <column datatype='real' name='TradesOpenedLast6Months' ordinal='45' />
+            <column datatype='real' name='DebtToIncomeRatio' ordinal='46' />
+            <column datatype='string' name='IncomeRange' ordinal='47' />
+            <column datatype='boolean' name='IncomeVerifiable' ordinal='48' />
+            <column datatype='real' name='StatedMonthlyIncome' ordinal='49' />
+            <column datatype='string' name='LoanKey' ordinal='50' />
+            <column datatype='integer' name='TotalProsperLoans' ordinal='51' />
+            <column datatype='integer' name='TotalProsperPaymentsBilled' ordinal='52' />
+            <column datatype='integer' name='OnTimeProsperPayments' ordinal='53' />
+            <column datatype='integer' name='ProsperPaymentsLessThanOneMonthLate' ordinal='54' />
+            <column datatype='integer' name='ProsperPaymentsOneMonthPlusLate' ordinal='55' />
+            <column datatype='real' name='ProsperPrincipalBorrowed' ordinal='56' />
+            <column datatype='real' name='ProsperPrincipalOutstanding' ordinal='57' />
+            <column datatype='integer' name='ScorexChangeAtTimeOfListing' ordinal='58' />
+            <column datatype='integer' name='LoanCurrentDaysDelinquent' ordinal='59' />
+            <column datatype='integer' name='LoanFirstDefaultedCycleNumber' ordinal='60' />
+            <column datatype='integer' name='LoanMonthsSinceOrigination' ordinal='61' />
+            <column datatype='integer' name='LoanNumber' ordinal='62' />
+            <column datatype='integer' name='LoanOriginalAmount' ordinal='63' />
+            <column datatype='string' name='LoanOriginationDate' ordinal='64' />
+            <column datatype='string' name='LoanOriginationQuarter' ordinal='65' />
+            <column datatype='string' name='MemberKey' ordinal='66' />
+            <column datatype='real' name='MonthlyLoanPayment' ordinal='67' />
+            <column datatype='real' name='LP_CustomerPayments' ordinal='68' />
+            <column datatype='real' name='LP_CustomerPrincipalPayments' ordinal='69' />
+            <column datatype='real' name='LP_InterestandFees' ordinal='70' />
+            <column datatype='real' name='LP_ServiceFees' ordinal='71' />
+            <column datatype='real' name='LP_CollectionFees' ordinal='72' />
+            <column datatype='real' name='LP_GrossPrincipalLoss' ordinal='73' />
+            <column datatype='real' name='LP_NetPrincipalLoss' ordinal='74' />
+            <column datatype='real' name='LP_NonPrincipalRecoverypayments' ordinal='75' />
+            <column datatype='real' name='PercentFunded' ordinal='76' />
+            <column datatype='integer' name='Recommendations' ordinal='77' />
+            <column datatype='integer' name='InvestmentFromFriendsCount' ordinal='78' />
+            <column datatype='real' name='InvestmentFromFriendsAmount' ordinal='79' />
+            <column datatype='integer' name='Investors' ordinal='80' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ListingKey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ListingKey]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ListingKey</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ListingNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ListingNumber]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ListingNumber</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ListingCreationDate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ListingCreationDate]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ListingCreationDate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditGrade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CreditGrade]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>CreditGrade</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Term</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Term]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>Term</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LoanStatus]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanStatus</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClosedDate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ClosedDate]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ClosedDate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BorrowerAPR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BorrowerAPR]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>BorrowerAPR</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BorrowerRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BorrowerRate]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>BorrowerRate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LenderYield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LenderYield]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LenderYield</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedEffectiveYield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedEffectiveYield]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>EstimatedEffectiveYield</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedLoss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedLoss]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>EstimatedLoss</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EstimatedReturn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EstimatedReturn]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>EstimatedReturn</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProsperRating (numeric)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProsperRating (numeric)]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ProsperRating (numeric)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProsperRating (Alpha)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProsperRating (Alpha)]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ProsperRating (Alpha)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProsperScore</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProsperScore]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ProsperScore</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ListingCategory (numeric)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ListingCategory (numeric)]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ListingCategory (numeric)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BorrowerState</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BorrowerState]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>BorrowerState</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Occupation]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>Occupation</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmploymentStatus]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>EmploymentStatus</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentStatusDuration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EmploymentStatusDuration]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>EmploymentStatusDuration</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsBorrowerHomeowner</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[IsBorrowerHomeowner]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>IsBorrowerHomeowner</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurrentlyInGroup</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[CurrentlyInGroup]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>CurrentlyInGroup</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GroupKey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GroupKey]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>GroupKey</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateCreditPulled</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[DateCreditPulled]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>DateCreditPulled</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScoreRangeLower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScoreRangeLower]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>CreditScoreRangeLower</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScoreRangeUpper</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CreditScoreRangeUpper]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>CreditScoreRangeUpper</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FirstRecordedCreditLine</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[FirstRecordedCreditLine]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>FirstRecordedCreditLine</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurrentCreditLines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CurrentCreditLines]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>CurrentCreditLines</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpenCreditLines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpenCreditLines]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>OpenCreditLines</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCreditLinespast7years</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalCreditLinespast7years]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>TotalCreditLinespast7years</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpenRevolvingAccounts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpenRevolvingAccounts]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>OpenRevolvingAccounts</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpenRevolvingMonthlyPayment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[OpenRevolvingMonthlyPayment]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>OpenRevolvingMonthlyPayment</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InquiriesLast6Months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InquiriesLast6Months]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>InquiriesLast6Months</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalInquiries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalInquiries]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>TotalInquiries</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurrentDelinquencies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CurrentDelinquencies]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>CurrentDelinquencies</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AmountDelinquent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AmountDelinquent]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>AmountDelinquent</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DelinquenciesLast7Years</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DelinquenciesLast7Years]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>DelinquenciesLast7Years</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PublicRecordsLast10Years</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PublicRecordsLast10Years]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>PublicRecordsLast10Years</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PublicRecordsLast12Months</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PublicRecordsLast12Months]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>PublicRecordsLast12Months</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RevolvingCreditBalance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RevolvingCreditBalance]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>RevolvingCreditBalance</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BankcardUtilization</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BankcardUtilization]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>BankcardUtilization</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvailableBankcardCredit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvailableBankcardCredit]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>AvailableBankcardCredit</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalTrades</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalTrades]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>TotalTrades</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TradesNeverDelinquent (percentage)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TradesNeverDelinquent (percentage)]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>TradesNeverDelinquent (percentage)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TradesOpenedLast6Months</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TradesOpenedLast6Months]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>TradesOpenedLast6Months</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DebtToIncomeRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DebtToIncomeRatio]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>DebtToIncomeRatio</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomeRange</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IncomeRange]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>IncomeRange</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomeVerifiable</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[IncomeVerifiable]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>IncomeVerifiable</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StatedMonthlyIncome</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[StatedMonthlyIncome]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>StatedMonthlyIncome</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanKey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LoanKey]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanKey</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalProsperLoans</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalProsperLoans]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>TotalProsperLoans</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalProsperPaymentsBilled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalProsperPaymentsBilled]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>TotalProsperPaymentsBilled</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnTimeProsperPayments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OnTimeProsperPayments]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>OnTimeProsperPayments</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProsperPaymentsLessThanOneMonthLate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProsperPaymentsLessThanOneMonthLate]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ProsperPaymentsLessThanOneMonthLate</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProsperPaymentsOneMonthPlusLate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProsperPaymentsOneMonthPlusLate]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ProsperPaymentsOneMonthPlusLate</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProsperPrincipalBorrowed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProsperPrincipalBorrowed]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ProsperPrincipalBorrowed</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProsperPrincipalOutstanding</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProsperPrincipalOutstanding]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ProsperPrincipalOutstanding</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ScorexChangeAtTimeOfListing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ScorexChangeAtTimeOfListing]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>ScorexChangeAtTimeOfListing</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanCurrentDaysDelinquent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanCurrentDaysDelinquent]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanCurrentDaysDelinquent</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanFirstDefaultedCycleNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanFirstDefaultedCycleNumber]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanFirstDefaultedCycleNumber</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanMonthsSinceOrigination</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanMonthsSinceOrigination]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanMonthsSinceOrigination</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanNumber]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanNumber</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanOriginalAmount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LoanOriginalAmount]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanOriginalAmount</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanOriginationDate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LoanOriginationDate]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanOriginationDate</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanOriginationQuarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LoanOriginationQuarter]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LoanOriginationQuarter</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MemberKey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MemberKey]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>MemberKey</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyLoanPayment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyLoanPayment]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>MonthlyLoanPayment</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_CustomerPayments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_CustomerPayments]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_CustomerPayments</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_CustomerPrincipalPayments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_CustomerPrincipalPayments]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_CustomerPrincipalPayments</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_InterestandFees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_InterestandFees]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_InterestandFees</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_ServiceFees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_ServiceFees]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_ServiceFees</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_CollectionFees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_CollectionFees]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_CollectionFees</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_GrossPrincipalLoss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_GrossPrincipalLoss]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_GrossPrincipalLoss</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_NetPrincipalLoss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_NetPrincipalLoss]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_NetPrincipalLoss</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LP_NonPrincipalRecoverypayments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LP_NonPrincipalRecoverypayments]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>LP_NonPrincipalRecoverypayments</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PercentFunded</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PercentFunded]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>PercentFunded</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recommendations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recommendations]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>Recommendations</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvestmentFromFriendsCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InvestmentFromFriendsCount]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>InvestmentFromFriendsCount</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvestmentFromFriendsAmount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[InvestmentFromFriendsAmount]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>InvestmentFromFriendsAmount</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Investors]</local-name>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias>Investors</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[prosperLoanData.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Amount Delinquent' datatype='real' name='[AmountDelinquent]' role='measure' type='quantitative' />
+      <column caption='Available Bankcard Credit' datatype='real' name='[AvailableBankcardCredit]' role='measure' type='quantitative' />
+      <column caption='Bankcard Utilization' datatype='real' name='[BankcardUtilization]' role='measure' type='quantitative' />
+      <column caption='Borrower APR' datatype='real' name='[BorrowerAPR]' role='measure' type='quantitative' />
+      <column caption='Borrower Rate' datatype='real' name='[BorrowerRate]' role='measure' type='quantitative' />
+      <column caption='Borrower State' datatype='string' name='[BorrowerState]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Closed Date' datatype='datetime' name='[ClosedDate]' role='dimension' type='ordinal' />
+      <column caption='Credit Grade' datatype='string' name='[CreditGrade]' role='dimension' type='nominal' />
+      <column caption='Credit Score Range Lower' datatype='integer' name='[CreditScoreRangeLower]' role='measure' type='quantitative' />
+      <column caption='Credit Score Range Upper' datatype='integer' name='[CreditScoreRangeUpper]' role='measure' type='quantitative' />
+      <column caption='Current Credit Lines' datatype='integer' name='[CurrentCreditLines]' role='measure' type='quantitative' />
+      <column caption='Current Delinquencies' datatype='integer' name='[CurrentDelinquencies]' role='measure' type='quantitative' />
+      <column caption='Currently In Group' datatype='boolean' name='[CurrentlyInGroup]' role='dimension' type='nominal' />
+      <column caption='Date Credit Pulled' datatype='datetime' name='[DateCreditPulled]' role='dimension' type='ordinal' />
+      <column caption='Debt To Income Ratio' datatype='real' name='[DebtToIncomeRatio]' role='measure' type='quantitative' />
+      <column caption='Employment Status Duration' datatype='integer' name='[EmploymentStatusDuration]' role='measure' type='quantitative' />
+      <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+      <column caption='Estimated Effective Yield' datatype='real' name='[EstimatedEffectiveYield]' role='measure' type='quantitative' />
+      <column caption='Estimated Loss' datatype='real' name='[EstimatedLoss]' role='measure' type='quantitative' />
+      <column caption='Estimated Return' datatype='real' name='[EstimatedReturn]' role='measure' type='quantitative' />
+      <column caption='First Recorded Credit Line' datatype='datetime' name='[FirstRecordedCreditLine]' role='dimension' type='ordinal' />
+      <column caption='Group Key' datatype='string' name='[GroupKey]' role='dimension' type='nominal' />
+      <column caption='Income Range' datatype='string' name='[IncomeRange]' role='dimension' type='nominal' />
+      <column caption='Income Verifiable' datatype='boolean' name='[IncomeVerifiable]' role='dimension' type='nominal' />
+      <column caption='Investment From Friends Amount' datatype='real' name='[InvestmentFromFriendsAmount]' role='measure' type='quantitative' />
+      <column caption='Investment From Friends Count' datatype='integer' name='[InvestmentFromFriendsCount]' role='measure' type='quantitative' />
+      <column caption='Is Borrower Homeowner' datatype='boolean' name='[IsBorrowerHomeowner]' role='dimension' type='nominal' />
+      <column caption='LP CollectionFees' datatype='real' name='[LP_CollectionFees]' role='measure' type='quantitative' />
+      <column caption='LP CustomerPayments' datatype='real' name='[LP_CustomerPayments]' role='measure' type='quantitative' />
+      <column caption='LP CustomerPrincipalPayments' datatype='real' name='[LP_CustomerPrincipalPayments]' role='measure' type='quantitative' />
+      <column caption='LP GrossPrincipalLoss' datatype='real' name='[LP_GrossPrincipalLoss]' role='measure' type='quantitative' />
+      <column caption='LP InterestandFees' datatype='real' name='[LP_InterestandFees]' role='measure' type='quantitative' />
+      <column caption='LP NetPrincipalLoss' datatype='real' name='[LP_NetPrincipalLoss]' role='measure' type='quantitative' />
+      <column caption='LP NonPrincipalRecoverypayments' datatype='real' name='[LP_NonPrincipalRecoverypayments]' role='measure' type='quantitative' />
+      <column caption='LP ServiceFees' datatype='real' name='[LP_ServiceFees]' role='measure' type='quantitative' />
+      <column caption='Lender Yield' datatype='real' name='[LenderYield]' role='measure' type='quantitative' />
+      <column caption='Listing Creation Date' datatype='datetime' name='[ListingCreationDate]' role='dimension' type='ordinal' />
+      <column caption='Listing Key' datatype='string' name='[ListingKey]' role='dimension' type='nominal' />
+      <column caption='Listing Number' datatype='integer' name='[ListingNumber]' role='dimension' type='ordinal' />
+      <column caption='Loan Current Days Delinquent' datatype='integer' name='[LoanCurrentDaysDelinquent]' role='measure' type='quantitative' />
+      <column caption='Loan First Defaulted Cycle Number' datatype='integer' name='[LoanFirstDefaultedCycleNumber]' role='dimension' type='ordinal' />
+      <column caption='Loan Key' datatype='string' name='[LoanKey]' role='dimension' type='nominal' />
+      <column caption='Loan Months Since Origination' datatype='integer' name='[LoanMonthsSinceOrigination]' role='measure' type='quantitative' />
+      <column caption='Loan Number' datatype='integer' name='[LoanNumber]' role='dimension' type='ordinal' />
+      <column caption='Loan Original Amount' datatype='integer' name='[LoanOriginalAmount]' role='measure' type='quantitative' />
+      <column aggregation='Count' caption='Loan Origination Date - Split 1' datatype='date' datatype-customized='true' name='[LoanOriginationDate - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.156xcbr0wgc9lq1a1j15f1cxuruv].[LoanOriginationDate]'>
+        <calculation class='tableau' formula='DATE(IF NOT ISNULL( DATEPARSE ( &quot;yyyy-MM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-MM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-MM-EEEEdd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-MM-EEEEdd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-dd-EEEEMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-dd-EEEEMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-dd-EEEEMMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-dd-EEEEMMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-dd-MMMMHH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-dd-MMMMHH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-HH-MMMMdd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-HH-MMMMdd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-HHmm-MMMMdd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-HHmm-MMMMdd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-dd-MM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-dd-MM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-dd-MMMMEEEE&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-dd-MMMMEEEE&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-MMMM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-MMMM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-EEEEMM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-EEEEMM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-EEEEMMMM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-EEEEMMMM-dd&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-MMdd-HH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-MMdd-HH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-ddMM-HH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-ddMM-HH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-MMdd-EEEEHH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-MMdd-EEEEHH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-ddHH-MM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-ddHH-MM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-ddHH-EEEEMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-ddHH-EEEEMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-ddHH-EEEEMMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-ddHH-EEEEMMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-ddMM-EEEEHH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-ddMM-EEEEHH&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-dd-MMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-dd-MMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-EEEEdd-MM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-EEEEdd-MM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-ddHH-MMMMEEEE&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-ddHH-MMMMEEEE&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   ELSEIF NOT ISNULL ( DATEPARSE ( &quot;yyyy-ddHH-MMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )  ) THEN DATEPARSE ( &quot;yyyy-ddHH-MMMM&quot;, TRIM( SPLIT( [LoanOriginationDate], &quot; &quot;, 1 ) ) )   END)' />
+      </column>
+      <column caption='Loan Origination Date' datatype='string' name='[LoanOriginationDate]' role='dimension' type='nominal' />
+      <column caption='Loan Origination Quarter' datatype='string' name='[LoanOriginationQuarter]' role='dimension' type='nominal' />
+      <column caption='Loan Status' datatype='string' name='[LoanStatus]' role='dimension' type='nominal' />
+      <column caption='Member Key' datatype='string' name='[MemberKey]' role='dimension' type='nominal' />
+      <column caption='Monthly Loan Payment' datatype='real' name='[MonthlyLoanPayment]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='On Time Prosper Payments' datatype='integer' name='[OnTimeProsperPayments]' role='measure' type='quantitative' />
+      <column caption='Open Credit Lines' datatype='integer' name='[OpenCreditLines]' role='measure' type='quantitative' />
+      <column caption='Open Revolving Accounts' datatype='integer' name='[OpenRevolvingAccounts]' role='measure' type='quantitative' />
+      <column caption='Open Revolving Monthly Payment' datatype='real' name='[OpenRevolvingMonthlyPayment]' role='measure' type='quantitative' />
+      <column caption='Percent Funded' datatype='real' name='[PercentFunded]' role='measure' type='quantitative' />
+      <column caption='Prosper Payments Less Than One Month Late' datatype='integer' name='[ProsperPaymentsLessThanOneMonthLate]' role='measure' type='quantitative' />
+      <column caption='Prosper Payments One Month Plus Late' datatype='integer' name='[ProsperPaymentsOneMonthPlusLate]' role='measure' type='quantitative' />
+      <column caption='Prosper Principal Borrowed' datatype='real' name='[ProsperPrincipalBorrowed]' role='measure' type='quantitative' />
+      <column caption='Prosper Principal Outstanding' datatype='real' name='[ProsperPrincipalOutstanding]' role='measure' type='quantitative' />
+      <column caption='Prosper Score' datatype='real' name='[ProsperScore]' role='measure' type='quantitative' />
+      <column caption='Revolving Credit Balance' datatype='real' name='[RevolvingCreditBalance]' role='measure' type='quantitative' />
+      <column caption='Scorex Change At Time Of Listing' datatype='integer' name='[ScorexChangeAtTimeOfListing]' role='measure' type='quantitative' />
+      <column caption='Stated Monthly Income' datatype='real' name='[StatedMonthlyIncome]' role='measure' type='quantitative' />
+      <column caption='Total Inquiries' datatype='real' name='[TotalInquiries]' role='measure' type='quantitative' />
+      <column caption='Total Prosper Loans' datatype='integer' name='[TotalProsperLoans]' role='measure' type='quantitative' />
+      <column caption='Total Prosper Payments Billed' datatype='integer' name='[TotalProsperPaymentsBilled]' role='measure' type='quantitative' />
+      <column caption='Total Trades' datatype='real' name='[TotalTrades]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.555749' measure-ordering='alphabetic' measure-percentage='0.444251' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='prosperLoanData' name='federated.156xcbr0wgc9lq1a1j15f1cxuruv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156xcbr0wgc9lq1a1j15f1cxuruv'>
+            <column caption='Debt To Income Ratio' datatype='real' name='[DebtToIncomeRatio]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[ProsperRating (Alpha)]' role='dimension' type='nominal' />
+            <column-instance column='[DebtToIncomeRatio]' derivation='Avg' name='[avg:DebtToIncomeRatio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ProsperRating (Alpha)]' derivation='None' name='[none:ProsperRating (Alpha):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.156xcbr0wgc9lq1a1j15f1cxuruv].[avg:DebtToIncomeRatio:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.156xcbr0wgc9lq1a1j15f1cxuruv].[sum:Number of Records:qk]</rows>
+        <cols>[federated.156xcbr0wgc9lq1a1j15f1cxuruv].[none:ProsperRating (Alpha):nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.156xcbr0wgc9lq1a1j15f1cxuruv].[avg:DebtToIncomeRatio:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.156xcbr0wgc9lq1a1j15f1cxuruv].[none:ProsperRating (Alpha):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAAPH0lEQVR4nO3d21Mc2X0H8G93z31gZhgGBEgCgSQQQhIXre43S7tOeTebdZzYcSoPSfyw
+      eUgqD/kHkodUyo/JQ16SvKVSqaw3lVRS62XX3ouVWFrJ0uJFCAQCBIibuAwDA3Pv7pMHC9YK
+      y1juHi4z5/t5kaDUR6cP/aXPOT3zG0UIIUAkIUVRFHW3O0G0mxgAkhoDQFJjALaFQCq5hrVE
+      ElZWWEKYiMfjSKUzEBvfEzAMA5l0Eoa5RaNCYGCgDznDRGItCSFMxGKxjTay6STWkpkXDhkf
+      6sdKMvvrd7JEOHa7A6XJxD/+3d/CG/Sj89o3EfFp8JaXYai/H53nzmF66CHc4QPQ9GXMRLM4
+      09GCe3fu4mh7F/TkGlKxcfzTD24i5PfiD//4DzDcP4DDhxvww/c+QUtTDY52ncHizCRUbwQH
+      KjQMPplB26kOmNFR9D1ZQ3X5EP7q+/+Av/z+X+Oj/+zGtetn8HQmhqqAgVv9s7hw/hzCzhwG
+      n0ZxqqkC3T++hd//5vXdHrRdwQBsExMKdAMwU7P4+3+5jVNHw2g61oJ/e+cHWBgbw9U3fhtD
+      X/wcYXcW7zzuweRMFJ8/GsPy9Dh+61s3kM4kAb8Ta9E59Pb8DANTUShwITo/Dd+wF/fGVpBd
+      ug8HkmgKl+NB5Ai80xPoOnMWfXc+wOnOFvT0DUNRVXR/+CM01YbxP2MmNM2Fjz/9MboO1+Dj
+      7m5E/uJvYCzfhAk5pwMynvOOCFYfxPf+5E/ReaQa11/7Fhr3BfBsZgo+XwXaO9twr/cehJnB
+      fDSFqkgl3OUhtLUewYnOazjeuB8nT3XC63Gi9/49uEIRBILlgLmETCYNVQEaj7Qg6HMh6NUw
+      9vQpNAXwuR1YjicwOjmHo83NGBt6BKgKVOiYnl9EeZkXDUeb4XE68HnfICrDFTD0DHSHD8pu
+      D9guUfgcYDsIJJMp+Hw+CFNHJgc4NRNz81FURiKIx6Jw+8pw8+ObuHD1EsKhciwuLsLrL4dD
+      1eBxa0hlDGjQkdVNJBJJBEJB6KkETKjw+30woMLUs3hw6ybufD6I3/uzP8c+ZwLv/PdHePON
+      NxDwe7GWTEJVVHzQ/V+4cOU1RELlMKHC0HMwchmksjqikwNYRB2udB3d7UHbcYqiKNsaACEE
+      FEXW3y35rS9qNYfD1m9fw9BhmAIupxMAkFxbg8fvh/pL467rOjRN+8qfRTKxBrfXD02V7+e0
+      7QHQdR0OB5cZtDcpiqJYujqzyVV80dePqromBJ1pjMzG8Ur7UcSWczBzawhFquHUuLygvc/S
+      HSCbSSOTTuP2Z3fh8fpwvDGChbQT0YkFiDInrlx4BQp4B6C9zfIdwOV2Y+TRA5hOF5wuH/yB
+      AGZXVjA+Ooz2114FhIBuGDBNE7lcrtD9JioYSwFYnp/BclKH31UGv5bCrZ89wukLXXA5X0Uy
+      Nol0rgZel4N3ANrzLC+CTdPc2FUQQkBVN8/5GQDayyxPgQC8cMFzq5OKFbdqSGo7Nj95784w
+      ekfnLB//vW+0o66yvIA9ItrBAAxPL+FW/5Tl4799tRWoLGCHiMApEEmOASCpMQAkNQaApMYA
+      kNQYAJIaA0BSYwBIagwASY0BIKkxACQ1BoCkxgCQ1BgAkhoDQFJjAEhqDABJjQEgqTEAJDUG
+      gKRmOQBCCPCjBajYWaoKkVpewP2+QSiaHwGvgWRWoLXtKJ5Np5BancbxztNwsTo0FQFLAfCG
+      ImhrbsDPh+cRX45BdZfBqZn47KMPcfY3vwGnqkDX9ReK45qmaaujhqGz0C4VnKUAJKOz+GJw
+      Gtcun0VyLQl9dRKPR+bR3NqG2akpHGuohcPxYnHcr6od+uvQNAeczz8FhahQLAVAcbjh96gY
+      GBpDuVPHXCyDzs5WrNbmYGbjyOkG3E6t0H0lKjhrU6BgJc6d+7JMW+PzP90RDwCWL6TiwZUq
+      SY0BIKkxACQ1BoCkxgCQ1BgAkhoDQFJjAEhqDABJjQEgqTEAJDUGgKTGAJDUGACSGgNAUmMA
+      SGoMAEmNASCpMQAkNQaApMYAkNQYAJIaA0BSYwBIapYKYwlhYP7ZM7j9IXg0A9HVNOr2VSKd
+      MQEzC5fHB01VCt1XooKzFIB0fAWx1SSePngMr0cg4Hcjk0thcTKORDaGK1evFLqfRNvCUgA8
+      gRCS/b3Yf7geKwsraG6pw8hYFA/u3MbV734HmgJWh6aiYCkAsfFBDM+l0Bo0oaQXcev2M7R2
+      dqDr2quYGuzBwarr8LpYHZr2PksBqDjUiu80HAMUBUrrYeiGCYdDQ10VABwubA+JtpG18uiK
+      AkVR1r+A0+Zvd6LdwiuXpMYAkNQYAJIaA0BSYwBIankDMDo6igcPHuDdd9+1/SCLaC/Kuw26
+      urqK3t5e1NXVwTAM2w+zqHC6e57ip4PPLB//R9db0FwbLGCPitOWAVhcXMTU1BRCoRAMw4Cm
+      8WNP95Jk1kAskbV8vK7zjg7kmQKFQiF4vV60trYilUpB1/Wd7BfRjtgyAA6HA21tbXj8+DFq
+      amr4OhwqSXkn9QsLC0gkEgiHwzvVH6IdlTcA9fX18Hg8iMfjO9Ufoh2VNwCDg4M4cOAAxsfH
+      uQagkpQ3ALW1tRgdHYXH4+EuEJWkvAGIRqN4/fXXUVVVBSHETvWJaMfkfRBWVVWF999/H2Vl
+      ZXwIRiUp71UthICu6wgEArwDUEnKG4DFxUUkEgkMDQ3xtUBUkvJOgTweDy5evIh0Os0pEJWk
+      La/qpaUlDA4O4pNPPkE2m/3yPcBEJWTLAOi6jvn5eeRyOcRiMa4BqCRtOQWqqqrC22+//WIF
+      CKISs2UAent7MTAwgOPHjyMYDOLQoUMMgkWr6RymYinLx1f63agOuAvYI1q3ZQBOnjyJ5eVl
+      rKys8JWgNs0up/Hv96ctH3/pSCVuBKoL2CNat+UaQNM0hMNhxGIx9PT0vLANauYymJl5hqxu
+      YG1tDaZpQggdiUQGK8vL4GqBikXebdC6ujqMjIygoaHhhW1QIQSi88/gcJdh8MEd1NU3oeFA
+      CJ++dxv7jh/FK8EgTCEghNgIjt1FtBBm0T6LMG2fu9h07nbH0yzi8SykX/kc4K233toocLtO
+      c3kQ9PsBAB2dp7Ew/RhDT3QIAMbzMV3/ARVq90iIwrW14+wGAF917jbHopjHs4DyBmB8fBxP
+      njxBe3s76uvrNxbB6dUYns5Mw72agVfLYWk5g1Nd+xDwh5FNziGTM+FxaRBCbLyK1O4CWlXV
+      on1Fqt2HiKqibDp3RbHZZhGPZyHlDcD+/fsxMTGBmZkZ1NfXb3zfU16By9e+tunfh8oBIFLg
+      Lm7t8XwCIwsJy8d3HQyihrsrUssbgOHhYcTjcWQyGei6vud2g5aSOTyJWt9ebNlXVsDeUDHK
+      G4D6+nr09fUhEAhsWgdQ6fnfR8/ww56nlo//3fONOHO4qoA92n55r+qVlRV4vV5ks1kIIfgg
+      rMTlDBOJjPW3vupG8e0qbbmSisViuHv3LiKRCBKJBHcMqCRtGQCfz4fLly9DCPHCDhBRKdly
+      CuR2uzE1NYXq6mpUVlYyAFSS8m4mK4qC/v5+DAwMcApEJSlvAILBIDRN47vBqGTlvbIjkQjK
+      ysqQzVqvQky0l+UNQCgUQkdHBxKJBCvDUUnaMgCmaWJpaQlDQ0Noamrac0+BiQphywCkUik8
+      fPgQk5OT6O7u5iKYStKW26CqqmJubg6hUAhvvvkmt0GpJG15BxBC4ODBgwiHwxgbG+MdgErS
+      lncAn8+HGzdu7GRfiHYcN/hJagwASY0BIKkxACQ1BoCkxgCQ1BgAkhoDQFJjAEhqlgMgntf+
+      FELAMIxC9olox1gq9qOn4vjgg49x5trXMfHwLuJpHW2dpzA3mUQ8/hTnr1yDS+PNhfY+SwHQ
+      POU4deIEFDML3VWBS511GBmL4v5Pfoqr3/02nKoCXddhmiZyuRwA2K5EbBj6RlvrTJt3HsMw
+      NrW5HXSb/fzlcfzye/ba1It4PAvJUgAMPYvllRi8mhdGahnjo1l4w7U4df4iJof70VhzGU6H
+      A7qub1SUs/u+Yk1zbHpTjmqzuKumaTvyRh+HzX6qqrr53FV7bTp2aDyno2u4Nzxnuc3WA2G0
+      HKiw1a98LAVAGAYClVXQnBo6T3dgPpZC48F9qK2sAcwM+M4BWje1uIb/+GzU8vG/cwF7LwBO
+      jw+HGhs3vi4L/OJPv98BgNWWqXhwpUpSYwBIagwASY0BIKkxACQ1BoCkxgCQ1BgAkhoDQFJj
+      AEhqDABJjQEgqTEAJDUGgKRm6eXQRLtpci6Gf37/ruXju1oO4vWLbQAYACpCC7FV/OuH9y0f
+      rxvmRgA4BSKpMQAkNQaApMYAkNQYAJIaA0BSYwBIanwO8P+YQsCwUcVRUwGVHypeNGwHYG5q
+      AhOzCzjW1go9DZj6GoKVVXAWaXHc6dUcHi2mLR9/rNKD+qCrgD2i7WT7Kh0afYIjzc0oc2Yx
+      0NOH/tFJOIr04if52L4DtDY3Y6z/Hsr3NWJs+DE6fuM1QAjohlGU1aHtftaBYW5uU+bq0HbH
+      86vOvZDjaTMAArMzs4gnDdQGfHjlazeQjE4gfXAfvK7irA6taQKA9RLfmrq5TZmrQ2vbcO6F
+      HE+bAVBwsuv0L/6mKKirAoAD9pok2kG2p0AKdzyoiHG1SlJjAEhqDABJjQEgqTEAJDUGgKTG
+      AJDUGACSGgNAUmMASGoMAEmNASCpMQAkNQaApMYAkNQYAJIaA0BSYwBIagwASY0BIKnZDoAQ
+      wnbtF6LdYrsu0P1bn2IlmcOJ0x2Yn0wgHp/E2UtX4GJ1OCoC9q5SM4ucI4RL59uxML2Iez/5
+      CFVNbbz4qWjYu1IVJ8zUCqYmJuEO+HHyzHlMjgxCN0WBuke0vexNgRQVHZ0nML2YRHN9HRKR
+      GggjDWEKQGXBLNr7bFeGKwtVoSX0/O9lTgAeCCGg6zpM04Su6wCAw7VBJI7XWf5/fG5to611
+      IbeKxgq35Ta9Gja16VJMRDzWw+tWzU1tep0KWqp9ltus9Dk2tVkbcqO9ocJym363uqnNSr8T
+      p+pDltsMeTf3M+hz4PThiOU2a0LeTW2W+9z4+tlmy20eq6/eaFMRQhR8vrLepGEYL10cVQjx
+      UmUWt6NN0zShKMpL/duXbVMIASHESxUFftk2gZc/f577r25TVVXl/wDq2eLwiwo5+gAAAABJ
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
