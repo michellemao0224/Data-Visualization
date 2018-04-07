@@ -19,12 +19,13 @@
 
 #### Loan Provider Profitability
 
-- Comparison (Line Chart): AVR[Borrower APR], AVG[Borrower Rate], AVG[Lender Yield]
-- Pie Chart: Total: LP CustomerPayment, Distribution: SUM[LP CustomerPrincipalPayment], SUM[LP InterestandFees]
-- SUM[Loan Amount] across Years/ Quarters/ Months 
+- Comparison (Line Chart & Dual Axis): AVR[Borrower APR], AVG[Borrower Rate], AVG[Lender Yield]
+- Pie Chart: SUM[LP InterestandFees], Distribution: ProsperRating
+- Columns: SUM[Loan Amount] , Rows: AVG[Estimated Return] (Percent of Total), Color: ProsperRating, Shape: AVG[BorrowerAPR]
 
 #### Credit Risk
 
-- Pie Chart: Total: Estimated Effective, Distribution: SUM[Estimated Loss], SUM[Estimated Return]
-- Amount Delinquent (calculate filter: >0) as ‘Delinquencies’ group.  Find this group: Employment Status, Borrower State, Prosper Rating, Income Range.
-- Revolving Credit Balance (calculate filter: [Revolving Credit Balance] / [Available Bankcard Credit] >= 0.7 ) as ‘High Liabilities’ group. Find this group: Current Delinquencies, BankcardUtilization, Debt to Income Ratio, Prosper Rating.
+- Dual Combination: Columns: Year(Loan Date), Rows: AVG[Debt To Income Rate], AVG[Current Delinquencies], Color: ProsperRating
+- Amount Delinquent (calculated field: [Amount Delinquent] > 0 AND NOT ISNULL([Amount Delinquent])) as ‘Delinquencies’ group.  Find this group: Bar Plot: Columns: Delinquencies, Prosper Rating, Rows: SUM[Number of Records](Percent of Total), Details: AVG[Details: Debt To Income Ratio], AVG[PublicRecordsLast10Years]
+- Revolving Credit Balance (calculated field: ([Revolving Credit Balance] / [Available Bankcard Credit] >= 0.7) AND NOT ISNULL([Revolving Credit Balance] / [Available Bankcard Credit] >= 0.7) ) as ‘Liabilities’ group. Find this group: Bar Plot: Columns: Liabilities, Prosper Rating, Rows: SUM[Number of Records](Percent of Total), Details: AVG[Details: Debt To Income Ratio], AVG[Bankcard Utilization]
+
