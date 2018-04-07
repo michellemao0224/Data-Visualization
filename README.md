@@ -12,9 +12,10 @@
 
 #### Customer Quality
 
-- Scatter Plot: IncomeRange vs. EmploymentStatus
-- Bar Plot: Prosper Rating (Color: AVG[Debt to Income Ratio])
-- Map: Borrower State (Color: Prosper Rating, Shape: Income Range, Filter: Years/ Quarters/ Months)
+- Bar Plot: IncomeRange (Color: EmploymentStatus, Filter: ProsperRating, Year, Loan Original Quarter)
+- Bar Plot: Prosper Rating (Color: AVG[Debt to Income Ratio], Filter: Year, Loan Original Quarter)
+- Map: Borrower State (Color: Number of Records, Shape: Prosper Rating, Filter: Year, Loan Original Quarter)
+- Map: Borrower State (Color: Loan Original Amount, Filter: Year, Loan Original Quarter)
 
 #### Loan Provider Profitability
 
