@@ -19,9 +19,9 @@
 
 #### Loan Provider Profitability
 
-- Comparison (Line Chart & Dual Axis & Trend Line): AVR[Borrower APR], AVG[Borrower Rate], AVG[Lender Yield]
+- Comparison (Line Chart & Dual Axis & Trend Line): AVG[Borrower APR], AVG[Borrower Rate], AVG[Lender Yield]
 - Pie Chart: Angle: SUM[LP InterestandFees], Color: ProsperRating, Label: SUM[LP InterestandFees], ProsperRating
-- Columns: SUM[Loan Amount] , Rows: SUM[Estimated Return] (Percent of Total), Color: ProsperRating, Shape: ProsperRating
+- Columns: AVG[Loan Amount] , Rows: AVG[Estimated Return] (Percent of Total), Color: ProsperRating, Shape: ProsperRating
 
 #### Credit Risk
 
